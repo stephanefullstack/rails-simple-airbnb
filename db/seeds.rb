@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "faker"
+
+puts 'Creating 5 fake posts...'
+
+5.times do
+  flat = Flat.new(
+    name: Faker::Company.name,
+    description: Faker::Company.catch_phrase,
+    address: "16 villa gaudelet Paris"
+  )
+  flat.save!
+end
+puts 'Finished!'

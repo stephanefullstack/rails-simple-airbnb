@@ -7,9 +7,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
-  <body>
+  <body class="bg-white">
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">Navbar</span>
+    </nav>
     <%= yield %>
   </body>
 </html>

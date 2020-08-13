@@ -1,0 +1,28 @@
+<div class="container mt-3">
+  <h1>All our Flats</h1>
+  <p>All 3 flats</p>
+  <div class="row mx-md-n5 ">
+  <% @flats.each do |flat| %>
+      <div class="row px-md-5">
+      <div class="p-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <%= link_to "More info",  %>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  <% end %>
+</div>
+</div>
